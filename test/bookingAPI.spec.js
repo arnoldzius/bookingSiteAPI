@@ -46,7 +46,7 @@ describe('Create and book room', () => {
     it('Book created room', async() => {
         const response = await axios.post(url.bookRoom, 
         {
-            "bookingdates": {checkin: "2022-10-20", checkout: "2022-10-25"}, //TO DO dynamic dates - today and tomorrow
+            "bookingdates": {checkin: "2022-10-20", checkout: "2022-10-25"}, // TO DO dynamic dates - today and tomorrow
             "depositpaid": false,
             "email": persons.email,
             "firstname": persons.firstName,
